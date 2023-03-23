@@ -18,9 +18,9 @@ const Footer = () => {
                 </div>
                 <div className="footer-group">
                     <h4>Legal</h4>
-                    <a href="/privacy">Privacy policy</a>
-                    <a href="/cookies">Cookie policy</a>
-                    <a href="/terms">Terms of service</a>
+                    <a href="/privacy.html">Privacy policy</a>
+                    <a href="/cookies.html">Cookie policy</a>
+                    <a href="/terms.html">Terms of service</a>
                 </div>
                 <div className="footer-group">
                     <h4>About</h4>
