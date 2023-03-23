@@ -1,0 +1,78 @@
+@import "../../styles/colors.scss";
+@import "../../styles/breakpoints.scss";
+
+.screenshot-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+    @media (max-width: $breakpoint-sm) {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    .screenshot {
+        width: 1400px;
+        margin: 64px 0;
+
+        @media (max-width: 1400px) {
+            width: 100%;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            max-height: 500px;
+            max-width: 350px;
+        }
+
+    }
+
+    .features {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        max-height: 300px;
+        color: $description-color;
+        padding: 0;
+
+        @media (max-width: $breakpoint-sm) {
+            margin-left: 0;
+            text-align: center;
+            max-width: none;
+            align-items: center;
+            flex-direction: column;
+            max-height: fit-content;
+            width: 100%;
+        }
+
+        b {
+            color: $tertiary-color;
+            font-size: larger;
+
+            @media (max-width: $breakpoint-sm) {
+                display: block;
+                margin-bottom: 12px;
+            }
+        }
+
+        h2 {
+            text-align: left;
+            margin: 0 0 24px 0;
+
+            @media (max-width: $breakpoint-sm) {
+                text-align: center;
+            }
+        }
+
+        & > * {
+            text-align: center;
+            max-width: 250px;
+            margin: 24px;
+            box-shadow: 8px 8px 16px gainsboro;
+            padding: 36px;
+            border: 1px solid gainsboro;
+            border-radius: 8px;
+            background: white;
+        }
+    }
+}
