@@ -8,9 +8,11 @@ import BeYourself from "../components/index/BeYourself";
 import MainScreenshot from "../components/index/MainScreenshot";
 import LoginSignupButtons from "../components/LoginSignupButtons";
 import Platforms from "../components/index/Platforms";
+import SEO from "../components/layout/Seo";
 
 const IndexPage = () => (
     <LayoutPage>
+        <SEO title="Kotobaten: Expand your vocablary, understand Japan" />
         <Header />
         <BeYourself />
         <LoginSignupButtons />
