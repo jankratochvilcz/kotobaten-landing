@@ -3,12 +3,12 @@ import React from "react";
 import "./Testimonials.css";
 
 // Avatar imports
-import AishaPatelAvatar from "../../images/avatars/aisha-patel.svg";
-import MarcusJohnsonAvatar from "../../images/avatars/marcus-johnson.svg";
-import ElenaRossiAvatar from "../../images/avatars/elena-rossi.svg";
-import HiroshiTanakaAvatar from "../../images/avatars/hiroshi-tanaka.svg";
-import FatimaAlZahraAvatar from "../../images/avatars/fatima-al-zahra.svg";
-import JamesThompsonAvatar from "../../images/avatars/james-thompson.svg";
+import AishaPatelAvatar from "../../images/avatars/aisha-patel.png";
+import MarcusJohnsonAvatar from "../../images/avatars/marcus-johnson.png";
+import ElenaRossiAvatar from "../../images/avatars/elena-rossi.png";
+import HiroshiTanakaAvatar from "../../images/avatars/hiroshi-tanaka.png";
+import FatimaAlZahraAvatar from "../../images/avatars/fatima-al-zahra.png";
+import JamesThompsonAvatar from "../../images/avatars/james-thompson.png";
 
 interface TestimonialProps {
     name: string;
