@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a **Gatsby.js landing page** for Kotobaten, a Japanese vocabulary learning app. The site is built with TypeScript, React, and SCSS, using Gatsby's static site generation.
+This is a **modern Gatsby.js landing page** for Kotobaten, a Japanese vocabulary learning app designed for advanced learners. The site features a clean, Japanese-inspired design built with TypeScript, React, and modern CSS, using Gatsby's static site generation.
 
 ## Common Commands
 
@@ -25,23 +25,26 @@ This is a **Gatsby.js landing page** for Kotobaten, a Japanese vocabulary learni
 ### Component Structure
 - **Pages**: Located in `src/pages/` - Gatsby automatically creates routes from these files
 - **Components**: Organized in `src/components/` with two main categories:
-  - `index/` - Components specific to the landing page (Header, Author, BeYourself, etc.)
+  - `index/` - Landing page sections (Header, Hero, Features, Testimonials, Screenshots, FinalCta)
   - `layout/` - Shared layout components (LayoutPage, Footer, SEO)
 - **Styles**: Global CSS files in `src/styles/` define design tokens:
-  - `variables.css` - CSS custom properties for colors, breakpoints, and spacing
+  - `variables.css` - Comprehensive design system with Japanese-inspired colors, typography scale, spacing system
   - `effects.css` - Shared visual effects and utility classes
 
 ### Styling Approach
-- **CSS Modules**: Each component has its own `.css` file co-located with the `.tsx` file
-- **CSS Custom Properties**: Global design system using CSS variables in `src/styles/variables.css`
-- **Modern CSS**: No preprocessors needed - uses native CSS features
-- **Responsive Design**: Media query-driven with mobile-first approach
+- **Component-Scoped CSS**: Each component has its own `.css` file co-located with the `.tsx` file
+- **Design System**: Comprehensive CSS custom properties defining colors, typography, spacing, and breakpoints
+- **Japanese-Inspired Design**: Deep red (#C41E3A) primary color with navy blue accents, modern geometric patterns
+- **Responsive Design**: Mobile-first approach with systematic breakpoints (768px, 1024px, 1200px, 1440px)
+- **Accessibility**: WCAG 2.1 compliant with proper focus states, semantic HTML, and screen reader support
 
 ### Key Features
-- **SEO Optimization**: Helmet-based meta tags with component-specific SEO data
-- **Image Optimization**: Gatsby's Sharp plugin for automatic image processing
-- **Font Loading**: Google Fonts (Noto Serif JP) with display swap
-- **Static Assets**: Favicons and legal pages in `static/` directory
+- **Modern Landing Page**: Hero section, feature cards, user testimonials, screenshots, and strong CTAs
+- **Social Proof**: Diverse testimonials highlighting JLPT success stories and consistent learning habits
+- **Performance Optimized**: Lazy loading, optimized images, efficient CSS
+- **SEO Optimization**: Structured data, semantic HTML, optimized meta tags
+- **Conversion Focused**: Multiple CTAs driving users to https://web.kotobaten.app
+- **Cross-Platform Messaging**: Emphasizes web availability with upcoming mobile/desktop apps
 
 ### TypeScript Configuration
 - Strict mode enabled with comprehensive type checking
