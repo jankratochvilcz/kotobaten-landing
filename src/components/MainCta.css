@@ -34,6 +34,6 @@
 
 .main-cta-root .main-cta-button:hover,
 .landing .main-cta-button:hover {
-  background: var(--primary-color);
+  background: var(--background-gradient);
   color: white;
 }

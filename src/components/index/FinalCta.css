@@ -34,7 +34,8 @@
   font-weight: 700;
   margin: 0 0 var(--spacing-lg) 0;
   line-height: 1.2;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: var(--text-white);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .final-cta__subtext {
