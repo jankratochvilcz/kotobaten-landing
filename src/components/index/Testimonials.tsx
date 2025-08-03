@@ -2,12 +2,20 @@ import React from "react";
 
 import "./Testimonials.css";
 
+// Avatar imports
+import AishaPatelAvatar from "../../images/avatars/aisha-patel.svg";
+import MarcusJohnsonAvatar from "../../images/avatars/marcus-johnson.svg";
+import ElenaRossiAvatar from "../../images/avatars/elena-rossi.svg";
+import HiroshiTanakaAvatar from "../../images/avatars/hiroshi-tanaka.svg";
+import FatimaAlZahraAvatar from "../../images/avatars/fatima-al-zahra.svg";
+import JamesThompsonAvatar from "../../images/avatars/james-thompson.svg";
+
 interface TestimonialProps {
     name: string;
     location: string;
     achievement: string;
     quote: string;
-    avatarPlaceholder: string;
+    avatarSrc: string;
 }
 
 const TestimonialCard: React.FC<TestimonialProps> = ({ 
@@ -15,7 +23,7 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
     location, 
     achievement, 
     quote, 
-    avatarPlaceholder 
+    avatarSrc 
 }) => (
     <div className="testimonial-card">
         <div className="testimonial-card__quote">
@@ -25,10 +33,12 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
             </p>
         </div>
         <div className="testimonial-card__author">
-            <div className="testimonial-card__avatar" aria-label={`${name}'s profile picture`}>
-                <span className="testimonial-card__avatar-placeholder">
-                    {avatarPlaceholder}
-                </span>
+            <div className="testimonial-card__avatar">
+                <img 
+                    src={avatarSrc} 
+                    alt={`${name}'s profile picture`}
+                    className="testimonial-card__avatar-image"
+                />
             </div>
             <div className="testimonial-card__info">
                 <h4 className="testimonial-card__name">
@@ -52,42 +62,42 @@ const Testimonials = () => {
             location: "Mumbai, India",
             achievement: "JLPT N2 Passed",
             quote: "Kotobaten's vocabulary system was a game-changer for my JLPT N2 prep. The spaced repetition helped me retain over 2,000 kanji compounds that showed up on the actual exam. I finally passed after two previous attempts!",
-            avatarPlaceholder: "[Avatar: Aisha]"
+            avatarSrc: AishaPatelAvatar
         },
         {
             name: "Marcus Johnson",
             location: "Chicago, USA",
             achievement: "365-day streak",
             quote: "I struggled with consistency until I found Kotobaten. The daily vocabulary practice became part of my morning routine. One year later, I have a 365-day streak and can finally read manga without constantly looking up words.",
-            avatarPlaceholder: "[Avatar: Marcus]"
+            avatarSrc: MarcusJohnsonAvatar
         },
         {
             name: "Elena Rossi",
             location: "Milan, Italy",
             achievement: "JLPT N1 Passed",
             quote: "The AI-generated practice questions were incredibly similar to the real JLPT N1 vocabulary section. Kotobaten helped me master the nuanced differences between similar words that make or break the exam.",
-            avatarPlaceholder: "[Avatar: Elena]"
+            avatarSrc: ElenaRossiAvatar
         },
         {
             name: "Hiroshi Tanaka",
             location: "São Paulo, Brazil",
             achievement: "Business Japanese Proficiency",
             quote: "As a Japanese-Brazilian, I thought I knew Japanese well. Kotobaten helped me learn business vocabulary I never encountered growing up. Now I can confidently participate in meetings with our Tokyo office.",
-            avatarPlaceholder: "[Avatar: Hiroshi]"
+            avatarSrc: HiroshiTanakaAvatar
         },
         {
             name: "Fatima Al-Zahra",
             location: "Dubai, UAE",
             achievement: "JLPT N3 Passed",
             quote: "The ability to add personal notes and context to each word was perfect for my learning style. I created connections between Arabic and Japanese that helped me remember vocabulary for my N3 exam.",
-            avatarPlaceholder: "[Avatar: Fatima]"
+            avatarSrc: FatimaAlZahraAvatar
         },
         {
             name: "James Thompson",
             location: "London, UK",
             achievement: "300+ day streak",
             quote: "Working long hours in finance, I needed something flexible. Kotobaten's quick review sessions fit perfectly into my tube commute. Small daily efforts over 300+ days transformed my Japanese comprehension.",
-            avatarPlaceholder: "[Avatar: James]"
+            avatarSrc: JamesThompsonAvatar
         }
     ];
 
@@ -110,7 +120,7 @@ const Testimonials = () => {
                             location={testimonial.location}
                             achievement={testimonial.achievement}
                             quote={testimonial.quote}
-                            avatarPlaceholder={testimonial.avatarPlaceholder}
+                            avatarSrc={testimonial.avatarSrc}
                         />
                     ))}
                 </div>
