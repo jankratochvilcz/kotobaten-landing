@@ -24,19 +24,26 @@
 }
 
 .hero__headline {
-  font-size: var(--font-size-5xl);
-  font-weight: 700;
-  line-height: 1.1;
-  color: var(--text-primary);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-6xl);
+  font-weight: 800;
+  line-height: 0.95;
+  color: var(--text-white);
   margin: 0;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  letter-spacing: -0.025em;
 }
 
 .hero__subheadline {
-  font-size: var(--font-size-xl);
-  line-height: 1.5;
-  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: var(--font-size-2xl);
+  font-weight: 400;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.9);
   margin: 0;
-  max-width: 480px;
+  max-width: 520px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  letter-spacing: -0.01em;
 }
 
 .hero__cta-group {
@@ -47,8 +54,8 @@
 }
 
 .hero__cta-primary {
-  background: var(--background-gradient);
-  color: var(--text-white);
+  background: var(--background-color);
+  color: var(--primary-color);
   padding: var(--spacing-lg) var(--spacing-2xl);
   border-radius: var(--radius-lg);
   text-decoration: none;
@@ -56,16 +63,18 @@
   font-size: var(--font-size-lg);
   text-align: center;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 16px var(--shadow-color);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   display: inline-block;
   max-width: 280px;
+  border: 2px solid transparent;
 }
 
 .hero__cta-primary:hover,
 .hero__cta-primary:focus {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px var(--shadow-hover);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
   outline: none;
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .hero__cta-primary:active {
@@ -74,7 +83,7 @@
 
 .hero__cta-secondary {
   font-size: var(--font-size-sm);
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.8);
   margin: 0;
   text-align: left;
 }
@@ -121,7 +130,7 @@
   }
   
   .hero__headline {
-    font-size: var(--font-size-4xl);
+    font-size: var(--font-size-5xl);
   }
   
   .hero__subheadline {
@@ -152,11 +161,12 @@
   }
 
   .hero__headline {
-    font-size: var(--font-size-3xl);
+    font-size: var(--font-size-4xl);
+    line-height: 1.05;
   }
 
   .hero__subheadline {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-xl);
     max-width: none;
   }
 
@@ -191,7 +201,8 @@
   }
 
   .hero__headline {
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-3xl);
+    line-height: 1.1;
   }
 
   .hero__cta-primary {

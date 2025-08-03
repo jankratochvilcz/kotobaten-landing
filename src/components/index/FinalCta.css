@@ -30,12 +30,14 @@
 }
 
 .final-cta__headline {
-  font-size: var(--font-size-4xl);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-5xl);
   font-weight: 700;
   margin: 0 0 var(--spacing-lg) 0;
-  line-height: 1.2;
+  line-height: 1.1;
   color: var(--text-white);
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  letter-spacing: -0.02em;
 }
 
 .final-cta__subtext {

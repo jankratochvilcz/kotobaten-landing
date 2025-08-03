@@ -21,7 +21,9 @@ plugins: [
         resolve: "gatsby-plugin-google-fonts",
         options: {
             fonts: [
-                "Noto Serif JP"
+                "Poppins:300,400,500,600,700,800,900",
+                "Inter:300,400,500,600,700",
+                "Noto Sans:300,400,500,600,700"
             ],
             display: "swap"
         }
