@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./FinalCta.css";
+import CTAButton from "../CTAButton";
 
 const FinalCta = () => {
     return (
@@ -14,14 +15,15 @@ const FinalCta = () => {
                         Join advanced learners who are already mastering Japanese with Kotobaten
                     </p>
                     <div className="final-cta__actions">
-                        <a 
-                            className="final-cta__primary" 
+                        <CTAButton 
                             href="https://web.kotobaten.app"
                             target="_blank"
                             rel="noopener noreferrer"
+                            size="large"
+                            variant="secondary"
                         >
                             Launch Web App
-                        </a>
+                        </CTAButton>
                         <p className="final-cta__secondary">
                             Free to start • No credit card required
                         </p>

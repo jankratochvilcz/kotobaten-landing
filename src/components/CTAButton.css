@@ -1,0 +1,99 @@
+.cta-button {
+  display: inline-block;
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  text-align: center;
+  border-radius: var(--radius-lg);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+/* Size Variants */
+.cta-button--small {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-size: var(--font-size-base);
+  border-radius: var(--radius-md);
+}
+
+.cta-button--medium {
+  padding: var(--spacing-lg) var(--spacing-2xl);
+  font-size: var(--font-size-lg);
+}
+
+.cta-button--large {
+  padding: var(--spacing-lg) var(--spacing-3xl);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+}
+
+/* Primary Variant (Dark background, light text) */
+.cta-button--primary {
+  background: var(--background-gradient);
+  color: var(--text-white);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button--primary:hover,
+.cta-button--primary:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+  outline: none;
+  filter: brightness(1.1);
+}
+
+.cta-button--primary:active {
+  transform: translateY(0);
+}
+
+/* Secondary Variant (Light background, dark text) */
+.cta-button--secondary {
+  background: var(--background-color);
+  color: var(--primary-color);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-color: rgba(196, 30, 58, 0.2);
+}
+
+.cta-button--secondary:hover,
+.cta-button--secondary:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  outline: none;
+  border-color: var(--primary-color);
+  background: rgba(196, 30, 58, 0.05);
+}
+
+.cta-button--secondary:active {
+  transform: translateY(0);
+}
+
+/* Small size hover adjustments */
+.cta-button--small:hover,
+.cta-button--small:focus {
+  transform: translateY(-1px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cta-button--large {
+    padding: var(--spacing-md) var(--spacing-2xl);
+    font-size: var(--font-size-lg);
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .cta-button--medium {
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: var(--font-size-base);
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-button--large,
+  .cta-button--medium {
+    font-size: var(--font-size-base);
+  }
+}

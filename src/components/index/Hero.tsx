@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Hero.css";
+import CTAButton from "../CTAButton";
 
 import DesktopScreenshot from "../../images/screenshots/Desktop.png";
 import MobileScreenshot from "../../images/screenshots/Phone.png";
@@ -17,14 +18,15 @@ const Hero = () => {
                         The only flashcard app built specifically for Japanese learners who are ready to level up
                     </p>
                     <div className="hero__cta-group">
-                        <a 
-                            className="hero__cta-primary" 
+                        <CTAButton 
                             href="https://web.kotobaten.app"
                             target="_blank"
                             rel="noopener noreferrer"
+                            size="large"
+                            variant="secondary"
                         >
                             Start Learning Now
-                        </a>
+                        </CTAButton>
                         <p className="hero__cta-secondary">
                             Available on web • Desktop &amp; mobile apps coming soon
                         </p>

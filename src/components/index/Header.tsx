@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import "./Header.css";
+import CTAButton from "../CTAButton";
 
 import Logo from "../../images/logos/LogoColor.png";
 
@@ -44,14 +45,15 @@ const Header = () => {
                     >
                         Testimonials
                     </button>
-                    <a 
-                        className="header__cta" 
+                    <CTAButton 
                         href="https://web.kotobaten.app"
                         target="_blank"
                         rel="noopener noreferrer"
+                        size="small"
+                        variant="primary"
                     >
                         Get Started
-                    </a>
+                    </CTAButton>
                 </nav>
             </div>
         </header>
