@@ -3,8 +3,8 @@ import React from "react";
 import "./Hero.css";
 import CTAButton from "../CTAButton";
 
-import DesktopScreenshot from "../../images/screenshots/Desktop.png";
-import MobileScreenshot from "../../images/screenshots/Phone.png";
+import DesktopScreenshot from "../../images/screenshots/desktop/image-home.png";
+import MobileScreenshot from "../../images/screenshots/phone/image-home.png";
 
 const Hero = () => {
     return (

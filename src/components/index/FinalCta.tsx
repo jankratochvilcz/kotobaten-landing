@@ -22,10 +22,10 @@ const FinalCta = () => {
                             size="large"
                             variant="secondary"
                         >
-                            Launch Web App
+                            Launch App
                         </CTAButton>
                         <p className="final-cta__secondary">
-                            Free to start • No credit card required
+                            Free • No credit card required
                         </p>
                     </div>
                 </div>

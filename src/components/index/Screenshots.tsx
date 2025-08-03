@@ -2,8 +2,9 @@ import React from "react";
 
 import "./Screenshots.css";
 
-import DesktopScreenshot from "../../images/screenshots/Desktop.png";
-import MobileScreenshot from "../../images/screenshots/Phone.png";
+import DesktopScreenshot from "../../images/screenshots/desktop/practice-recap.png";
+import PracticeScreenshot from "../../images/screenshots/other/practice.png";
+import PracticeScreenshot2 from "../../images/screenshots/other/practice-generated-sentence-explanation.png";
 
 const Screenshots = () => {
     return (
@@ -37,13 +38,13 @@ const Screenshots = () => {
                         <div className="screenshots__mobile-group">
                             <img 
                                 className="screenshots__image screenshots__image--mobile" 
-                                src={MobileScreenshot} 
+                                src={PracticeScreenshot} 
                                 alt="Kotobaten mobile app showing portable Japanese learning experience"
                                 loading="lazy"
                             />
                             <img 
                                 className="screenshots__image screenshots__image--mobile screenshots__image--offset" 
-                                src={MobileScreenshot} 
+                                src={PracticeScreenshot2} 
                                 alt="Kotobaten mobile app additional screen"
                                 loading="lazy"
                             />
