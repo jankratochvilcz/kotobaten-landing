@@ -1,5 +1,5 @@
 import React from "react"
-import "./Platforms.scss"
+import "./Platforms.css"
 
 import MicrosoftStoreBadge from "../../images/stores/microsoft-store.png"
 import AppleStoreBadge from "../../images/stores/apple-store.png"

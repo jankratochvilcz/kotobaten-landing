@@ -1,0 +1,44 @@
+.be-yourself-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.be-yourself-root .be-yourself-container {
+  margin: 48px;
+  font-size: 32pt;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .be-yourself-root .be-yourself-container {
+    margin: 48px;
+    flex-direction: column;
+    font-size: 24pt;
+  }
+}
+
+.be-yourself-root .be-yourself-container .be-yourself-name {
+  color: var(--primary-color);
+  width: 180px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.be-yourself-root .be-yourself-container .be-yourself-final {
+  text-decoration: underline;
+}
+
+.be-yourself-root .be-yourself-container .in-japanese {
+  display: none;
+}
+
+.be-yourself-root .be-yourself-cta {
+  max-width: 460px;
+  color: var(--description-color);
+  text-align: center;
+}

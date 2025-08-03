@@ -1,7 +1,7 @@
 import React from "react";
 import authorImage from "../../images/jan.png";
 
-import "./Author.scss";
+import "./Author.css";
 
 const Author = () => (
     <div className="author-card">

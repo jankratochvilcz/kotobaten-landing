@@ -1,10 +1,25 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-const SEO = ({
-    description, lang, meta, title
+interface MetaTag {
+    name?: string;
+    property?: string;
+    content: string;
+}
+
+interface SEOProps {
+    description?: string;
+    lang?: string;
+    meta?: MetaTag[];
+    title: string;
+}
+
+const SEO: React.FC<SEOProps> = ({
+    description = "",
+    lang = "en",
+    meta = [],
+    title
 }) => {
     const { site } = useStaticQuery(
         graphql`
@@ -61,7 +76,7 @@ const SEO = ({
                     name: "twitter:description",
                     content: metaDescription
                 }
-            ].concat(meta)}
+            ].concat((meta || []) as any)}
         >
             <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
             <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -71,17 +86,5 @@ const SEO = ({
     );
 };
 
-SEO.defaultProps = {
-    lang: "en",
-    meta: [],
-    description: ""
-};
-
-SEO.propTypes = {
-    description: PropTypes.string,
-    lang: PropTypes.string,
-    meta: PropTypes.arrayOf(PropTypes.object),
-    title: PropTypes.string.isRequired
-};
 
 export default SEO;

@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import React from "react";
 
-import "./MainCta.scss";
+import "./MainCta.css";
 import OpenAppButton from "./OpenAppButton";
 
 type MainCtaStyle = "blog" | "landing"

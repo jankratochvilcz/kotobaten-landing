@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./MainScreenshot.scss";
+import "./MainScreenshot.css";
 
 import DesktopScreenshot from "../../images/screenshots/Desktop.png";
 import MobileScreenshot from "../../images/screenshots/Phone.png";

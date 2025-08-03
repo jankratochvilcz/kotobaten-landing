@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 
-import "./OpenAppButton.scss";
+import "./OpenAppButton.css";
 
 type OpenAppButtonProps = {
     content?: string,

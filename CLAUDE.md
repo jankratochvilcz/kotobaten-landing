@@ -27,16 +27,15 @@ This is a **Gatsby.js landing page** for Kotobaten, a Japanese vocabulary learni
 - **Components**: Organized in `src/components/` with two main categories:
   - `index/` - Components specific to the landing page (Header, Author, BeYourself, etc.)
   - `layout/` - Shared layout components (LayoutPage, Footer, SEO)
-- **Styles**: Global SCSS files in `src/styles/` define design tokens:
-  - `colors.scss` - Color variables with :export for TypeScript usage
-  - `breakpoints.scss` - Responsive breakpoint variables
-  - `effects.scss` - Shared visual effects
+- **Styles**: Global CSS files in `src/styles/` define design tokens:
+  - `variables.css` - CSS custom properties for colors, breakpoints, and spacing
+  - `effects.css` - Shared visual effects and utility classes
 
 ### Styling Approach
-- **SCSS Modules**: Each component has its own `.scss` file co-located with the `.tsx` file
-- **Global Styles**: Shared design tokens in `src/styles/`
-- **Color System**: Uses CSS custom properties exported from SCSS for TypeScript access
-- **Responsive Design**: Breakpoint-driven with mobile-first approach
+- **CSS Modules**: Each component has its own `.css` file co-located with the `.tsx` file
+- **CSS Custom Properties**: Global design system using CSS variables in `src/styles/variables.css`
+- **Modern CSS**: No preprocessors needed - uses native CSS features
+- **Responsive Design**: Media query-driven with mobile-first approach
 
 ### Key Features
 - **SEO Optimization**: Helmet-based meta tags with component-specific SEO data
@@ -54,9 +53,10 @@ This is a **Gatsby.js landing page** for Kotobaten, a Japanese vocabulary learni
 
 ### Component Patterns
 - Use functional components with TypeScript interfaces for props
-- Co-locate SCSS files with components
-- Import styles as modules when needed
+- Co-locate CSS files with components
+- Import CSS files directly (no modules needed)
 - Use classNames library for conditional CSS classes
+- Reference design tokens via CSS custom properties (var(--primary-color))
 
 ### File Organization
 - Static assets (images, favicons) go in `static/`
@@ -67,4 +67,4 @@ This is a **Gatsby.js landing page** for Kotobaten, a Japanese vocabulary learni
 - Site metadata is configured in `gatsby-config.ts`
 - Sharp plugin handles image optimization automatically
 - Google Fonts are loaded via gatsby-plugin-google-fonts
-- SASS compilation is handled by gatsby-plugin-sass
+- CSS files are processed natively by Gatsby (no preprocessor needed)

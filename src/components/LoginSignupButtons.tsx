@@ -3,7 +3,7 @@ import classNames from "classnames";
 
 import OpenAppButton from "./OpenAppButton";
 
-import "./LoginSignupButtons.scss";
+import "./LoginSignupButtons.css";
 
 type ButtonsTheme = "dark" | "light";
 

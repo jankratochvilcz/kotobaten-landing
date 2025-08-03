@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Faq.scss";
+import "./Faq.css";
 
 const Faq = () => (
     <div id="faq">

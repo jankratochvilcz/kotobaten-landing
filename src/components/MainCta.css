@@ -1,0 +1,39 @@
+.main-cta-root {
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main-cta-root .main-cta-title {
+  font-size: large;
+  font-weight: bold;
+}
+
+.main-cta-root .main-cta-description {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.main-cta-root .main-cta-button {
+  color: white;
+  border-color: black;
+  background: black;
+}
+
+.main-cta-root .main-cta-button:hover {
+  background: white;
+  color: black;
+}
+
+.main-cta-root .main-cta-button,
+.landing .main-cta-button {
+  border: 2px solid var(--primary-color);
+  background: white;
+  color: var(--primary-color);
+}
+
+.main-cta-root .main-cta-button:hover,
+.landing .main-cta-button:hover {
+  background: var(--primary-color);
+  color: white;
+}

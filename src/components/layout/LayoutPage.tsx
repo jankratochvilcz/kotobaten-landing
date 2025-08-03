@@ -4,7 +4,8 @@ import classNames from "classnames";
 import Footer from "./Footer";
 import SEO from "./Seo";
 
-import "./LayoutPage.scss";
+import "../../styles/variables.css";
+import "./LayoutPage.css";
 
 type LayoutPageProps = {
     className?: string,

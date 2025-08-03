@@ -17,7 +17,6 @@ plugins: [
         }
     },
     "gatsby-transformer-remark",
-    "gatsby-plugin-sass",
     {
         resolve: "gatsby-plugin-google-fonts",
         options: {

@@ -1,0 +1,12 @@
+.card-shadow {
+  box-shadow: 0 8px 6px -6px var(--border-color);
+  border-radius: 2px;
+}
+
+.card-shadow-accented {
+  border-color: var(--primary-color);
+  box-shadow: 0 8px 6px -6px var(--primary-color);
+  border-radius: 2px;
+  transition-property: border-color;
+  transition-duration: 0.2s;
+}

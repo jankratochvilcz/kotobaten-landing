@@ -1,0 +1,23 @@
+:root {
+  /* Colors */
+  --primary-color: #BD0029;
+  --secondary-color: #554562;
+  --tertiary-color: #9E0022;
+  --background-color: #ffffff;
+  
+  --error-color: #CB5563;
+  --success-color: #57B894;
+  --highlight-color: #E09811;
+  
+  --border-color: #d9d9d9;
+  --gray-light: #f0f0f0;
+  --card-border-color: white;
+  
+  --description-color: #808080;
+  
+  /* Breakpoints */
+  --breakpoint-xs: 575px;
+  --breakpoint-sm: 767px;
+  --breakpoint-md: 991px;
+  --breakpoint-lg: 1199px;
+}

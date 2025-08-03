@@ -1,7 +1,7 @@
 import classNames from "classnames"
 import React, { useEffect, useState } from "react"
 
-import "./BeYourself.scss"
+import "./BeYourself.css"
 
 const names = [
     "Naruto",
